@@ -1,0 +1,16 @@
+name: "DevOps Greeting Action"
+description: "A custom JavaScript GitHub Action"
+
+inputs:
+  who-to-greet:
+    description: "Person to greet"
+    required: true
+    default: "World"
+
+outputs:
+  greeting:
+    description: "Generated greeting message"
+
+runs:
+  using: "node24"
+  main: "dist/index.js"
